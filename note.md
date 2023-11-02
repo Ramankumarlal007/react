@@ -1,6 +1,10 @@
 why to learn React?
 it is easy to manage and bulid complex front-end.
 
+ ***npx create-react-app 01basicreact***
+ cd 01basicreact
+ npm run start
+ npm run build
 ![Alt text](image.png)
 
 ![Alt text](image-1.png)
