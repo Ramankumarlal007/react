@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .scrolling-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scrolling-text {
+    display: block;
+    animation: marquee-animation 10s linear 5 ;
+  }
+  
+  @keyframes marquee-animation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        date :- <input type="datetime-local" name="date" id="">
+        time:- <input type="time" name="time" id="">
+      </form>
+      
+    <meter value="75" min="0" max="100">75%</meter>
+<BR></BR>
+
+<progress value="50" max="100"></progress>
+<img src="" alt="">
+<input type="text">
+<div class="scrolling-text-container">
+    <p class="scrolling-text">This is a scrolling text example!</p>
+  </div>
+  
+<div class="first">
+
+</div>
+
+
+  
+</body>
+<script>
+  function addNote() {
+            var newP = document.createElement("p");
+            var textNode = document.createTextNode("rishabh is a good boy");
+            newP.appendChild(textNode);
+            var firstElement = document.getElementsByClassName("first")[0]; // Select the first element with the class "first"
+            let child = firstElement.appendChild(newP);
+            return child;
+        }
+
+        // let paragraph = addNote();
+        // console.log(paragraph);
+
+        setInterval(function (p)  {
+          let paragraph = addNote();
+          console.log(paragraph);
+        }, 2000);
+
+
+</script>
+</html>
