@@ -7,9 +7,61 @@
 </head>
 <body>
     
-    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+    <a href="http://" target="_blank" rel="noopener noreferrer">anchor tag</a>
     
     <div id="root"></div>
+    <h1 id="counter"> counter : 0
+    </h1>
+     <h2 class="spany">heading: <span class="san"></span></h2>
+    <button  id="add">Add</button>
+    <button  id="remove">Remove</button>
+    <p class="span">Paragraph update: <span class="spafn"></span></p>
     <script src="./customreact.js"></script>
+
+        <script>
+        let counter = document.querySelector("#counter");
+        let add = document.querySelector('#add');
+        let remove = document.querySelector("#remove");
+        let spany = document.querySelector(".spany");
+        let span = document.querySelector(".span");
+        
+
+
+        let number = 0;
+
+
+        function updateElements() {
+    counter.innerHTML = "counter: " + number;
+    spany.innerHTML = "heading: " + number;
+    span.innerHTML = "Paragraph: " + number;
+};
+
+        add.addEventListener('click', function increasement() {
+            
+            // counter.innerHTML = "counter: "  + number++;
+            // spany.innerHTML = "heading: "  + number++;
+            // span.innerHTML = "Paragraph: "  + number++;
+            number = number + 1;
+            updateElements()
+            
+
+        })
+
+        remove.addEventListener('click', function decreasement() {
+            // counter.innerHTML = "counter: "  + number--;
+            // spany.innerHTML = "heading: "  + number--;
+            // span.innerHTML = "Paragraph: "  + number--;
+
+           number--;
+            updateElements()
+               
+        })
+
+        
+
+        
+        
+        </script>
+
 </body>
 </html>
