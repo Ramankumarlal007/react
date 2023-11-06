@@ -40,47 +40,53 @@ import './App.css'
 
 
 function App () {
-    
+
+// let [count, setcount] = useState(0)
+
+// // let count = 0;
+//    function addValue () {
+//     // console.log(`count: ${count}` );/
+//     if (count < 10) {
+//     count = count + 1;
+//     setcount(count);
+//     }
+//     // setcount(count++)
+//    }
+
+//    let removeValue = function () {
+//    if (count > 0) {
+//     count = count - 1 ;
+//     setcount(count)
+//    }
+//    }
+
 let [count, setcount] = useState(0)
 
-
-
-// let count = 0;
-   function addValue () {
-    // console.log(`count: ${count}` );/
-    if (count < 20) {
-        count = count + 1;
-    setcount(count);
+let addValue = function () {
+    if (count < 10) {
+        setcount(count + 1 )
     }
-    // setcount(count++)
-   }
+}; 
 
-   let removeValue = function () {
-   if (count > 0) {
-    count = count - 1 ;
-    setcount(count)
-   }
-   }
-
-
-
+let removeValue = function () {
+    if (count >= 0) {
+        setcount(count - 1)
+    }
+}
 
     return (
         <>
          <h1> Amazon Web Services</h1>
          <h2>Pricing: {count}</h2>
          <h3>user Count: {count}</h3>
-         <p>The toal sync data : {count}</p>
+         <p>The total sync data : {count}</p>
          <button onClick={addValue}>Added Items: {count}</button>
-         <br />
-         <button onClick={removeValue}>Removed items: {count}</button>
-    
-        </>
-       
+         <br/>
+         {/* <button onClick={removeValue}>Removed items: {count}</button> */}
+         <button onClick={removeValue}>Removed Items: {count}</button>
+         <br/>
+        </>       
     )
-
-
-
 }
 
 
