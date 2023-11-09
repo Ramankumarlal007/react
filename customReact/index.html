@@ -7,18 +7,21 @@
 </head>
 <body>
     
-    <a href="http://" target="_blank" rel="noopener noreferrer">anchor tag</a>
+    <a href="http://https://github.com/acdlite/react-fiber-architecture" target="_blank" rel="noopener noreferrer">React fibr/a>
     
-    <div id="root"></div>
-    <h1 id="counter"> counter : 0
-    </h1>
+    <div id="root">\
+        <h1>https://github.com/acdlite/react-fiber-architecture</h1>
+        <h1>Amazon Prime video subscription</h1>
+    </div>
+    <h1 id="counter"> counter : 0  </h1>
+   
      <h2 class="spany">heading: <span class="san"></span></h2>
     <button  id="add">Add</button>
     <button  id="remove">Remove</button>
     <p class="span">Paragraph update: <span class="spafn"></span></p>
     <script src="./customreact.js"></script>
 
-        <script>
+    <script>
         let counter = document.querySelector("#counter");
         let add = document.querySelector('#add');
         let remove = document.querySelector("#remove");
@@ -30,11 +33,14 @@
         let number = 0;
 
 
-        function updateElements() {
+    function updateElements() {
+        if (number <= 10 && number >=-5) {
     counter.innerHTML = "counter: " + number;
     spany.innerHTML = "heading: " + number;
     span.innerHTML = "Paragraph: " + number;
+        } 
 };
+
 
         add.addEventListener('click', function increasement() {
             
@@ -42,9 +48,7 @@
             // spany.innerHTML = "heading: "  + number++;
             // span.innerHTML = "Paragraph: "  + number++;
             number = number + 1;
-            updateElements()
-            
-
+            updateElements();
         })
 
         remove.addEventListener('click', function decreasement() {
@@ -61,7 +65,7 @@
 
         
         
-        </script>
+    </script>
 
 </body>
 </html>
