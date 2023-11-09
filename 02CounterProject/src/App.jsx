@@ -60,11 +60,30 @@ function App () {
 //    }
 //    }
 
-let [count, setcount] = useState(0)
+let [count, setcount] = useState(2)
 
 let addValue = function () {
-    if (count < 10) {
-        setcount(count + 1 )
+    // if (count < 20) {
+    //     setcount(count + 1 )
+    //     //Interview Question, now what will happen when clicked on add value
+    //     // with oneclick 1 value will inc only 
+    //     setcount(count + 1 ) // all are updating the same thing this is not increased. bcoz useState send the things in batches and while dending it will recognize rrhat are r having same value so the output willbe same.
+    //     setcount(count + 1 )
+    //     setcount(count + 1 )
+    //     setcount(count + 1 )
+
+
+    // }
+
+    if (count < 20) {
+        setcount(PrevCount => PrevCount + 1 )
+        //Interview Question, now what will happen when clicked on add value ; here it will inc. it is th ehidden feature of use state.
+        setcount(PrevCount => PrevCount + 1 )
+        setcount(PrevCount => PrevCount + 1 )
+        setcount(PrevCount => PrevCount + 1 )
+        setcount(PrevCount => PrevCount + 1 )
+
+        
     }
 }; 
 
