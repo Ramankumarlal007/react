@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div className='bg-green-400 text-black p-4 rounded-xl mb-5'>Tailwind Css Props</div>
-        <Card username = "cacola" btnText = "clickme" />
+        <Card username = "Coca-cola" btnText = "clickme" />
         <Card username = "Chai aur burger" btnText = "Visitkme" />
         <Card/>
     </>

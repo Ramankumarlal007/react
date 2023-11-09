@@ -13,3 +13,6 @@ it is easy to manage and bulid complex front-end.
 Backend as  a service (BAAP)
 
 ![Alt text](image-4.png)
+
+// onclick demands a function to get passed to it.
+// setcolor is a function, but setcolor() is not a function it is a returned value passed to the onclick
